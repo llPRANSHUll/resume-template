@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.resume3 {
+  width: 100vw;
+  background-color: rgb(206, 201, 201);
+  display: flex;
+  /* overflow: hidden; */
+}
+.resume3 .left {
+  width: 45vw;
+  height: 100vh;
+}
+.resume3 .right {
+  width: 55vw;
+  height: 188vh;
+  display: grid;
+  place-items: center;
+  /* background-color: aqua; */
+  /* overflow: auto; */
+  padding: 20px;
+}
+.resume3 .right .resume {
+  width: 52vw;
+  height: 180vh;
+  /* overflow: auto; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* border: 6px solid red; */
+}
+.resume3 .resume_left {
+  width: 22vw;
+  /* border: 2px solid red; */
+  padding-left: 30px;
+}
+.resume3 .resume_right {
+  background-color: #fff;
+  width: 30vw;
+  /* border: 2px solid red; */
+}
+
+.r3-left-right-wrapper {
+  display: flex;
+}
+
+.r3-header-img {
+  /* border: 6px solid red; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; */
+  width: 100%;
+  height: 22vh;
+  background-image: url("./r3-header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 65%;
+  position: relative;
+}
+/* .r3-header-img img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
+.r3-header-img-front {
+  width: 100%;
+  height: 22vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.r3-person-info {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.r3-person-info h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.r3-person-info h4 {
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.r3-leftside-contents {
+  background-color: #014abd;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 50px 30px;
+  gap: 50px;
+}
+
+.r3-profile-pic {
+  width: 250px;
+  height: 250px;
+  background-image: url("./r1-img.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 12px solid #fff;
+  margin-top: -25px;
+  z-index: 1;
+}
+.r3-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.r3-skills h2 {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.r3-skills-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.r3-skills-info h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  text-align: left;
+  /* margin-top: 15px; */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+/* .r3-skills-bar-wrapper {
+  width: 80%;
+  height: 11px;
+  border-radius: 10px;
+  background-color: white;
+}
+.r3-skills-bar {
+  width: 85%;
+  height: 11px;
+  border-radius: 10px;
+  background-color: #6da0eb;
+} */
+
+.r3-languages h2 {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.r3-languages-info {
+  display: flex;
+  margin-top: 6px;
+  gap: 15px;
+  /* flex-wrap: wrap; */
+}
+.r3-languages-info h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  text-align: left;
+  /* margin-top: 15px; */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.r3-languages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.r3-objective h2 {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.r3-objective-info p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.r3-contact {
+  margin-top: 6px;
+}
+.r3-contact h2 {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.r3-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.r3-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.r3-contact-info-details {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.r3-rightside-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10px 30px 40px;
+  gap: 50px;
+}
+
+.r3-education {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.r3-education h2 {
+  color: #014abd;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.r3-education-details {
+  text-align: left;
+}
+
+.r3-education-details h3 {
+  color: #014abd;
+  font-size: 18px;
+}
+
+.r3-education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgba(1, 74, 189, 0.8);
+}
+
+.divider {
+  width: 95%;
+  padding: 1px;
+  margin: 0;
+  margin-left: -10px;
+  background: rgba(1, 74, 189, 0.3);
+  border-top-right-radius: 25px;
+}
+
+.r3-internship-experience h2 {
+  color: #014abd;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.r3-internship-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dots {
+  height: 20px;
+  width: 20px;
+  background-color: #003892;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.r3-internship-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.r3-internship-info-details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.r3-internship-info-details p {
+  font-size: 18px;
+  color: #0055df;
+}
+
+.r3-projects h2 {
+  color: #014abd;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.r3-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dots {
+  height: 20px;
+  width: 20px;
+  background-color: #003892;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.r3-projects-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.r3-projects-info-details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.r3-projects-info-details p {
+  font-size: 18px;
+  color: #0055df;
+}
+
+.r3-heading h2 {
+  color: #014abd;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.r3-contact-info-details {
+  font-size: 18px;
+  color: #0055df;
+  display: flex;
+  gap: 15px;
+}
+
+.r3-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
